@@ -5,6 +5,7 @@ void searchbook(const char *title) {
 	const char *genres[] = {"NIL", "THRILLER", "ADVENTURE", "ROMANCE", "COMEDY", "SELFHELP"};
 
 	for (int i = 0; i < 10; i++) {
+		printf("added another comment on search book");
 		if (occupied[i] && strcmp(title, b[i].title) == 0) {
 			char *found_title = b[i].title;
 			char *found_author = b[i].author;
