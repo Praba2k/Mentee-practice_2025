@@ -1,18 +1,13 @@
-/*
- * library_github_project.c
- *
- * Created: 4/22/2025 12:14:13 PM
- * Author : Mohammed Abubakar VS
- */ 
+#include "features.h"
 
-#include <avr/io.h>
+int main() {
+	addbook(0, "The Alchemist", "Paulo Coelho", "1988", SELFHELP);
+	addbook(1, "Atomic Habits", "James Clear", "2014", ADVENTURE);
+	addbook(2, "Rich Dad Poor Dad", "Rober kiyosaki", "1892", THRILLER);
+	
+	searchbook("Atomic Habits");
+	removebook("The Alchemist");
+	searchbook("Rich Dad Poor Dad");
 
-
-int main(void)
-{
-    /* Replace with your application code */
-    while (1) 
-    {
-    }
+	return 0;
 }
-
